@@ -4,22 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
     app:startDestination="@+id/inventarioFragment">
-
-    <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.baratio2.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
-
-    <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.baratio2.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
     <fragment
         android:id="@+id/inventarioFragment"
         android:name="com.example.baratio2.InventarioFragment"
         android:label="fragment_inventario"
         tools:layout="@layout/fragment_inventario" />
+    <fragment
+        android:id="@+id/empleadosFragment"
+        android:name="com.example.baratio2.EmpleadosFragment"
+        android:label="fragment_empleados"
+        tools:layout="@layout/fragment_empleados" />
 
 </navigation>
