@@ -40,7 +40,7 @@ public class EmpleadosFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        root = inflater.inflate(R.layout.fragment_inventario, container, false);
+        root = inflater.inflate(R.layout.fragment_empleados, container, false);
         init();
         return root;
     }
