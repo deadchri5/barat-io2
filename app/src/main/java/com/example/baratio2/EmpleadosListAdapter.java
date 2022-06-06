@@ -7,12 +7,11 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.ListAdapter;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.baratio2.databinding.InventarioRowBinding;
 import com.example.baratio2.databinding.UsuarioRowBinding;
 
-public class UsuarioListAdapter extends ListAdapter<Usuario, UsuarioListAdapter.UsuarioViewHolder> {
+public class EmpleadosListAdapter extends ListAdapter<Usuario, EmpleadosListAdapter.UsuarioViewHolder> {
 
-    protected UsuarioListAdapter() {
+    protected EmpleadosListAdapter() {
         super(Usuario.itemCallback);
     }
 

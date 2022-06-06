@@ -14,7 +14,7 @@ import java.util.ArrayList;
 
 public class EmpleadosFragment extends Fragment {
 
-    private UsuarioListAdapter usuarioListAdapter;
+    private EmpleadosListAdapter empleadosListAdapter;
     private RecyclerView lstProductos;
     View root;
 
@@ -46,15 +46,18 @@ public class EmpleadosFragment extends Fragment {
     }
 
     public void init() {
-        usuarioListAdapter = new UsuarioListAdapter();
+        empleadosListAdapter = new EmpleadosListAdapter();
         ArrayList<Usuario> usuarioList = new ArrayList<>();
-        usuarioList.add(new Usuario("669", "Aldo", "1", "aldo@maildrop.cc","pass"));
-        usuarioList.add(new Usuario("777", "Adolfo", "2","bofo@maildrop.cc", "pass"));
-        usuarioList.add(new Usuario("666", "fabian", "2","elman@maildrop.cc", "fabian123"));
-        usuarioListAdapter.submitList(usuarioList);
+        usuarioList.add(new Usuario("669", "Aldo", "1",
+                "aldo@maildrop.cc","pass"));
+        usuarioList.add(new Usuario("777", "Adolfo", "2",
+                "bofo@maildrop.cc", "pass"));
+        usuarioList.add(new Usuario("666", "fabian", "2",
+                "elman@maildrop.cc", "fabian123"));
+        empleadosListAdapter.submitList(usuarioList);
         lstProductos = root.findViewById(R.id.lstProductos);
         lstProductos.setLayoutManager(new LinearLayoutManager(root.getContext()));
-        lstProductos.setAdapter(usuarioListAdapter);
-        usuarioListAdapter.notifyDataSetChanged();
+        lstProductos.setAdapter(empleadosListAdapter);
+        empleadosListAdapter.notifyDataSetChanged();
     }
 }
