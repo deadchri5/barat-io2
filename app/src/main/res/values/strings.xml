@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">baratio2</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Baratio</string>
+    <string name="nav_header_subtitle">La tienda más barata</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="inventario">Inventario</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="buscar">Buscar</string>
+    <string name="nombre">Nombre</string>
+    <string name="precio">Precio</string>
+    <string name="cantidad">Cantidad</string>
+    <string name="marca">Marca</string>
+    <string name="descripcion">Descripcion</string>
+    <string-array name="marca">
+        <item>Marca</item>
+        <item>Usuario</item>
+    </string-array>
+</resources>
