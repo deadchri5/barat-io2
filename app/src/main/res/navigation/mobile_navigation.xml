@@ -21,5 +21,10 @@
         android:name="com.example.baratio2.InventarioFragment"
         android:label="fragment_inventario"
         tools:layout="@layout/fragment_inventario" />
+    <fragment
+        android:id="@+id/empleadosFragment"
+        android:name="com.example.baratio2.EmpleadosFragment"
+        android:label="fragment_empleados"
+        tools:layout="@layout/fragment_empleados" />
 
 </navigation>
