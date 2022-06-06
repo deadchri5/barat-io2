@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-        <variable name="producto" type="com.example.baratio2.Producto"/>
+        <variable name="usuario" type="com.example.baratio2.Usuario"/>
 
     </data>
 
@@ -41,7 +41,7 @@
                 android:id="@+id/txtNombre"
                 android:layout_width="240dp"
                 android:layout_height="43dp"
-                android:text="@{producto.getNombre()}"
+                android:text="@{usuario.getNombre()}"
                 android:textSize="18sp" />
 
             <TextView
@@ -99,21 +99,21 @@
                 android:id="@+id/txtCantidad"
                 android:layout_width="70dp"
                 android:layout_height="43dp"
-                android:text="@{producto.getCantidad()}"
+                android:text="@{usuario.getTipoUsuario()}"
                 android:textSize="16sp" />
 
             <TextView
                 android:id="@+id/txtMarca"
                 android:layout_width="130dp"
                 android:layout_height="43dp"
-                android:text="@{producto.getMarca()}"
+                android:text="@{usuario.getPass()}"
                 android:textSize="16sp" />
 
             <TextView
                 android:id="@+id/txtDescripcion"
                 android:layout_width="185dp"
                 android:layout_height="44dp"
-                android:text="@{producto.getDescripcion()}"
+                android:text="@{usuario.getCorreo()}"
                 android:textSize="16sp" />
 
         </LinearLayout>
