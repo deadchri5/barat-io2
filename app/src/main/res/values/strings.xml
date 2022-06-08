@@ -24,6 +24,9 @@
     <string name="marca">Marca</string>
     <string name="descripcion">Descripcion</string>
     <string name="empleados">Empleados</string>
+    <string name="crear_producto">Crear Producto</string>
+    <string name="agregar">Agregar</string>
+    <string name="volver">Volver</string>
     <string-array name="marca">
         <item>Marca</item>
         <item>Usuario</item>
