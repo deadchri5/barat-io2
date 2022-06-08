@@ -1,29 +1,28 @@
 package com.example.baratio2;
 
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-
 import java.util.ArrayList;
 
-public class EmpleadosFragment extends Fragment {
+public class UsuarioFragment extends Fragment {
 
-    private EmpleadosListAdapter empleadosListAdapter;
+    private InventarioListAdapter inventarioListAdapter;
     private RecyclerView lstProductos;
     View root;
 
-    public EmpleadosFragment() {
+    public UsuarioFragment() {
         // Required empty public constructor
     }
 
-    public static InventarioFragment newInstance() {
-        InventarioFragment fragment = new InventarioFragment();
+    public static UsuarioFragment newInstance() {
+        UsuarioFragment fragment = new UsuarioFragment();
         Bundle args = new Bundle();
         fragment.setArguments(args);
         return fragment;
@@ -40,24 +39,22 @@ public class EmpleadosFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        root = inflater.inflate(R.layout.fragment_empleados, container, false);
+        root = inflater.inflate(R.layout.fragment_inventario, container, false);
         init();
         return root;
     }
-
+    
     public void init() {
-        empleadosListAdapter = new EmpleadosListAdapter();
-        ArrayList<Usuario> usuarioList = new ArrayList<>();
-        usuarioList.add(new Usuario("669", "Aldo", "1",
-                "aldo@maildrop.cc","pass"));
-        usuarioList.add(new Usuario("777", "Adolfo", "2",
-                "bofo@maildrop.cc", "pass"));
-        usuarioList.add(new Usuario("666", "fabian", "2",
-                "elman@maildrop.cc", "fabian123"));
-        empleadosListAdapter.submitList(usuarioList);
+        inventarioListAdapter = new InventarioListAdapter();
+        ArrayList<Producto> productoList = new ArrayList<>();
+        productoList.add(new Producto("vd52", "Verdura", "5", "La Granja",
+                "Verdura Fresca", 120));
+        productoList.add(new Producto("pp33", "Pechuga de Pollo", "55",
+                "La Granja", "Pechuga de Pollo", 244));
+        inventarioListAdapter.submitList(productoList);
         lstProductos = root.findViewById(R.id.lstProductos);
         lstProductos.setLayoutManager(new LinearLayoutManager(root.getContext()));
-        lstProductos.setAdapter(empleadosListAdapter);
-        empleadosListAdapter.notifyDataSetChanged();
+        lstProductos.setAdapter(inventarioListAdapter);
+        inventarioListAdapter.notifyDataSetChanged();
     }
 }

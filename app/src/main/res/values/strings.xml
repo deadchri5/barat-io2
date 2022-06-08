@@ -10,11 +10,16 @@
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
     <string name="inventario">Inventario</string>
+    <string name="empleado">Empleado</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_blank_fragment"></string>
     <string name="buscar">Buscar</string>
     <string name="nombre">Nombre</string>
+    <string name="id">ID</string>
+    <string name="pass">Contraseña</string>
     <string name="precio">Precio</string>
+    <string name="tipo">Nivel</string>
+    <string name="mail">Correo</string>
     <string name="cantidad">Cantidad</string>
     <string name="marca">Marca</string>
     <string name="descripcion">Descripcion</string>
