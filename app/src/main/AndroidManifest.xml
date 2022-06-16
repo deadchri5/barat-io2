@@ -12,6 +12,7 @@
         <activity
             android:name=".MainActivity"
             android:theme="@style/Theme.Baratio2.NoActionBar"
+            android:label="@string/app_name"
             android:exported="false" />
         <activity
             android:name=".LoginActivity"

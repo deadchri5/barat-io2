@@ -2,9 +2,11 @@ package com.example.baratio2;
 
 import static android.content.Context.MODE_PRIVATE;
 
+import android.app.Dialog;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 
+import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -78,13 +80,13 @@ public class InventarioFragment extends Fragment {
         lstProductos.setLayoutManager(new LinearLayoutManager(root.getContext()));
         lstProductos.setAdapter(inventarioListAdapter);
         inventarioListAdapter.notifyDataSetChanged();
-        ImageButton button= (ImageButton) root.findViewById(R.id.btnCrear);
+        ImageButton button= root.findViewById(R.id.btnCrear);
         button.setOnClickListener(view -> {
-            CrearProductoFragment nextFrag= new CrearProductoFragment();
-            getActivity().getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.fragment_parent, nextFrag, "findThisFragment")
-                    .addToBackStack(null)
-                    .commit();
+            final CrearProductoDialog crearDialog = new CrearProductoDialog();
+            //fbDialogue.getWindow().setBackgroundDrawable(new ColorDrawable(Color.argb(100, 0, 0, 0)));
+            //crearDialog.setContentView(R.layout.fragment_crear_producto);
+            crearDialog.setCancelable(true);
+            crearDialog.show(getActivity().getSupportFragmentManager(), "dialog");
         });
     }
 }
