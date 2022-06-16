@@ -22,8 +22,8 @@ public class EmpleadosFragment extends Fragment {
         // Required empty public constructor
     }
 
-    public static InventarioFragment newInstance() {
-        InventarioFragment fragment = new InventarioFragment();
+    public static EmpleadosFragment newInstance() {
+        EmpleadosFragment fragment = new EmpleadosFragment();
         Bundle args = new Bundle();
         fragment.setArguments(args);
         return fragment;
