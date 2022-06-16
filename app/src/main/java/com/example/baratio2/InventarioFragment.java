@@ -62,7 +62,7 @@ public class InventarioFragment extends Fragment {
         Gson gson = new Gson();
         if(!sharedPreferences.contains("productoList")){
             productoList.add(new Producto("vd52", "Verdura", "5", "La Granja",
-                    "Verdura Fresca", 120));
+                    "Verdura Frescaxd", 120));
             productoList.add(new Producto("pp33", "Pechuga de Pollo", "55",
                     "La Granja", "Pechuga de Pollo", 244));
             SharedPreferences.Editor prefsEditor = sharedPreferences.edit();
