@@ -6,9 +6,49 @@
     tools:context=".addUserFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <AbsoluteLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        tools:ignore="Deprecated">
+
+        <EditText
+            android:id="@+id/editTextTextPersonName4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="89dp"
+            android:layout_y="176dp"
+            android:ems="10"
+            android:hint="Nombre de Usuario"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="89dp"
+            android:layout_y="262dp"
+            android:ems="10"
+            android:hint="Contraseña"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="86dp"
+            android:layout_y="346dp"
+            android:ems="10"
+            android:hint="Confrime Contraseña"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="129dp"
+            android:layout_y="445dp"
+            android:text="Registrar" />
+
+    </AbsoluteLayout>
 
 </FrameLayout>

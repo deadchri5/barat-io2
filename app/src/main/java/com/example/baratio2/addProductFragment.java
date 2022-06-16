@@ -32,7 +32,7 @@ public class addProductFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        root = inflater.inflate(R.layout.fragment_add_user, container, false);
+        root = inflater.inflate(R.layout.fragment_add_product, container, false);
         init();
         return root;
     }
