@@ -5,16 +5,20 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/empleadosFragment"
-            android:icon="@drawable/ic_baseline_supervised_user_circle_24"
-            android:title="@string/empleados" />
-        <item
             android:id="@+id/inventarioFragment"
             android:icon="@drawable/ic_baseline_view_list_24"
             android:title="@string/inventario" />
         <item
+            android:id="@+id/addProductFragment"
+            android:icon="@drawable/baseline_switch_access_shortcut_add_20"
+            android:title="@string/addProduct" />
+        <item
             android:id="@+id/empleadosFragment"
-            android:icon="@drawable/ic_baseline_view_list_24"
-            android:title="Empleados" />
+            android:icon="@drawable/ic_baseline_supervised_user_circle_24"
+            android:title="@string/empleados" />
+        <item
+            android:id="@+id/addUserFragment"
+            android:icon="@drawable/baseline_account_circle_18"
+            android:title="@string/addUser" />
     </group>
 </menu>

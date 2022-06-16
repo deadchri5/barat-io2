@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addProductFragment">
+    <AbsoluteLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        tools:ignore="Deprecated">
+
+        <EditText
+            android:id="@+id/editTextTextPersonName4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="89dp"
+            android:layout_y="176dp"
+            android:ems="10"
+            android:hint="Nombre de Producto"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="131dp"
+            android:layout_y="595dp"
+            android:text="Registrar" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="91dp"
+            android:layout_y="247dp"
+            android:ems="10"
+            android:hint="Marca"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="87dp"
+            android:layout_y="324dp"
+            android:ems="10"
+            android:hint="Descripcion"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editTextNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="89dp"
+            android:layout_y="389dp"
+            android:ems="10"
+            android:hint="Existencias"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/editTextNumber2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="86dp"
+            android:layout_y="459dp"
+            android:ems="10"
+            android:hint="Precio"
+            android:inputType="number" />
+
+    </AbsoluteLayout>
+
+
+</FrameLayout>

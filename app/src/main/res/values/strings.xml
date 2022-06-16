@@ -4,6 +4,7 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Baratio</string>
     <string name="nav_header_subtitle">La tienda más barata</string>
+    <string name="nav_header_option">Cerrar Sesión</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
     <string name="menu_home">Home</string>
@@ -11,6 +12,8 @@
     <string name="menu_slideshow">Slideshow</string>
     <string name="inventario">Inventario</string>
     <string name="empleado">Empleado</string>
+    <string name="addUser">Añadir Usuario</string>
+    <string name="addProduct">Añadir Producto</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment"></string>
     <string name="buscar">Buscar</string>
