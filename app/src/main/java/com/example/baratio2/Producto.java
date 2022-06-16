@@ -5,13 +5,13 @@ import androidx.recyclerview.widget.DiffUtil;
 
 public class Producto {
     private String id, nombre, cantidad, marca, descripcion;
-    private int precio;
+    private String precio;
 
     public Producto() {
     }
 
     public Producto(String id, String nombre, String cantidad, String marca, String descripcion,
-                    int precio) {
+                    String precio) {
         this.id = id;
         this.nombre = nombre;
         this.cantidad = cantidad;
@@ -60,11 +60,11 @@ public class Producto {
         this.descripcion = descripcion;
     }
 
-    public int getPrecio() {
+    public String getPrecio() {
         return precio;
     }
 
-    public void setPrecio(int precio) {
+    public void setPrecio(String precio) {
         this.precio = precio;
     }
 

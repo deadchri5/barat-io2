@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 
 import java.util.ArrayList;
 
@@ -59,5 +60,13 @@ public class EmpleadosFragment extends Fragment {
         lstProductos.setLayoutManager(new LinearLayoutManager(root.getContext()));
         lstProductos.setAdapter(empleadosListAdapter);
         empleadosListAdapter.notifyDataSetChanged();
+        ImageButton button = root.findViewById(R.id.btnCrear);
+        button.setOnClickListener(view -> {
+            final CrearUsuarioDialogFragment crearDialog = new CrearUsuarioDialogFragment();
+            //fbDialogue.getWindow().setBackgroundDrawable(new ColorDrawable(Color.argb(100, 0, 0, 0)));
+            //crearDialog.setContentView(R.layout.fragment_crear_producto);
+            crearDialog.setCancelable(true);
+            crearDialog.show(getActivity().getSupportFragmentManager(), "dialog");
+        });
     }
 }

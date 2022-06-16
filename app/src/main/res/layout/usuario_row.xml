@@ -106,14 +106,14 @@
                 android:id="@+id/txtMarca"
                 android:layout_width="130dp"
                 android:layout_height="43dp"
-                android:text="@{usuario.getPass()}"
+                android:text="@{usuario.getCorreo()}"
                 android:textSize="16sp" />
 
             <TextView
                 android:id="@+id/txtDescripcion"
                 android:layout_width="185dp"
                 android:layout_height="44dp"
-                android:text="@{usuario.getCorreo()}"
+                android:text="@{usuario.getPass()}"
                 android:textSize="16sp" />
 
         </LinearLayout>

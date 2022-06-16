@@ -28,8 +28,10 @@
     <string name="descripcion">Descripcion</string>
     <string name="empleados">Empleados</string>
     <string name="crear_producto">Crear Producto</string>
+    <string name="modificar_producto">Modificar Producto</string>
     <string name="agregar">Agregar</string>
     <string name="volver">Volver</string>
+    <string name="modificar">Modificar</string>
     <string-array name="marca">
         <item>Marca</item>
         <item>Usuario</item>

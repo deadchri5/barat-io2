@@ -29,6 +29,18 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
+        <ImageButton
+            android:id="@+id/btnCrear"
+            android:layout_width="66dp"
+            android:layout_height="59dp"
+            android:layout_marginTop="42dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/txtTitulo"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/add" />
+
         <EditText
             android:id="@+id/txtBuscar"
             app:layout_constraintStart_toStartOf="parent"
@@ -43,15 +55,15 @@
 
         <ImageButton
             android:id="@+id/btnBuscar"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/txtBuscar"
-            app:layout_constraintTop_toBottomOf="@+id/txtTitulo"
-            app:srcCompat="@drawable/search"
             android:layout_width="66dp"
             android:layout_height="59dp"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp" />
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/txtBuscar"
+            app:layout_constraintTop_toBottomOf="@+id/btnCrear"
+            app:srcCompat="@drawable/search" />
 
         <Spinner
             android:id="@+id/spMarca"
@@ -79,6 +91,7 @@
             android:id="@+id/lstProductos"
             android:layout_width="370dp"
             android:layout_height="745dp"
+            android:layout_marginTop="8dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txtPrecio"

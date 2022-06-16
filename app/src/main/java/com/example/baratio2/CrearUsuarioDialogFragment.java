@@ -2,23 +2,17 @@ package com.example.baratio2;
 
 import android.os.Bundle;
 
+import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class addUserFragment extends Fragment {
+public class CrearUsuarioDialogFragment extends DialogFragment {
     View root;
-    public addUserFragment() {
+    public CrearUsuarioDialogFragment() {
         // Required empty public constructor
-    }
-
-    public static addUserFragment newInstance() {
-        addUserFragment fragment = new addUserFragment();
-        Bundle args = new Bundle();
-        fragment.setArguments(args);
-        return fragment;
     }
 
     @Override
@@ -32,7 +26,7 @@ public class addUserFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        root = inflater.inflate(R.layout.fragment_add_user, container, false);
+        root = inflater.inflate(R.layout.fragment_crear_usuario, container, false);
         init();
         return root;
     }

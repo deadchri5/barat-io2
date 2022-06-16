@@ -45,16 +45,6 @@ public class UsuarioFragment extends Fragment {
     }
     
     public void init() {
-        inventarioListAdapter = new InventarioListAdapter();
-        ArrayList<Producto> productoList = new ArrayList<>();
-        productoList.add(new Producto("vd52", "Verdura", "5", "La Granja",
-                "Verdura Fresca", 120));
-        productoList.add(new Producto("pp33", "Pechuga de Pollo", "55",
-                "La Granja", "Pechuga de Pollo", 244));
-        inventarioListAdapter.submitList(productoList);
-        lstProductos = root.findViewById(R.id.lstProductos);
-        lstProductos.setLayoutManager(new LinearLayoutManager(root.getContext()));
-        lstProductos.setAdapter(inventarioListAdapter);
-        inventarioListAdapter.notifyDataSetChanged();
+
     }
 }
