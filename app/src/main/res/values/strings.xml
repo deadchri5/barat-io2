@@ -13,6 +13,7 @@
     <string name="inventario">Inventario</string>
     <string name="empleado">Empleado</string>
     <string name="addUser">Añadir Usuario</string>
+    <string name="addProduct">Añadir Producto</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment"></string>
     <string name="buscar">Buscar</string>

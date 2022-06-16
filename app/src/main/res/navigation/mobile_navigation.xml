@@ -19,5 +19,10 @@
         android:name="com.example.baratio2.addUserFragment"
         android:label="fragment_add_user"
         tools:layout="@layout/fragment_add_user" />
+    <fragment
+        android:id="@+id/addProductFragment"
+        android:name="com.example.baratio2.addProductFragment"
+        android:label="fragment_add_product"
+        tools:layout="@layout/fragment_add_product" />
 
 </navigation>
