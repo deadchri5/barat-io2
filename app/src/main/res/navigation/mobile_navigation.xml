@@ -14,5 +14,10 @@
         android:name="com.example.baratio2.EmpleadosFragment"
         android:label="@string/app_name"
         tools:layout="@layout/fragment_empleados" />
+    <fragment
+        android:id="@+id/logoutFragment"
+        android:name="com.example.baratio2.LogoutFragment"
+        android:label="fragment_logout"
+        tools:layout="@layout/fragment_logout" />
 
 </navigation>
