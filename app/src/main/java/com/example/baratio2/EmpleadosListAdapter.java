@@ -76,7 +76,7 @@ public class EmpleadosListAdapter extends ListAdapter<Usuario, EmpleadosListAdap
                     for (int i = 0; i < usuarioList.size(); i++) {
                         if (usuarioList.get(i).getId().equals(productID)) {
                             position = i;
-                            Toast.makeText(context, "Usuario " + usuarioList.get(i).getNombre() + " Eliminado", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(context, "Usuario " + usuarioList.get(i).getNombre() + " Eliminado.", Toast.LENGTH_SHORT).show();
                             usuarioList.remove(i);
                         }
                     }
