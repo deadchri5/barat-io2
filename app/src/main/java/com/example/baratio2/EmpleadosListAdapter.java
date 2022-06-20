@@ -37,7 +37,7 @@ public class EmpleadosListAdapter extends ListAdapter<Usuario, EmpleadosListAdap
         SharedPreferences sharedPreferences;
 
         public UsuarioViewHolder(UsuarioRowBinding binding,
-                                    EmpleadosListAdapter EmpleadosListAdapter) {
+                                    EmpleadosListAdapter empleadosListAdapter) {
             super(binding.getRoot());
             context = binding.getRoot().getContext();
             usuarioRowBinding = binding;

@@ -63,20 +63,20 @@ public class ModificarUsuarioDialogFragment extends DialogFragment {
         agregar.setOnClickListener(view -> {
             SharedPreferences sharedPreferences =
                     this.getActivity().getSharedPreferences("MySharedPref", MODE_PRIVATE);
-            String json = sharedPreferences.getString("usuarioList", "");
-            ArrayList<Usuario> usuarioList = new Gson()
+            String json = sharedPreferences.getString("userList", "");
+            ArrayList<Usuario> userList = new Gson()
                     .fromJson(json, new TypeToken<ArrayList<Usuario>>() { }.getType());
             String sNombre = nombre.getText().toString();
             String sPassword = pass.getText().toString();
             String sCorreo = correo.getText().toString();
             String sTipo = this.tipoDeUsuario.getSelectedItem().toString();
             int position = viewHolder.getAdapterPosition();
-            usuarioList.set(position, new Usuario(Integer.toString((int)Math.floor(Math.random()*(10000-0+1)+0)),sNombre, sTipo,sCorreo, sPassword));
+            userList.set(position, new Usuario(Integer.toString((int)Math.floor(Math.random()*(10000-0+1)+0)),sNombre, sTipo,sCorreo, sPassword));
             SharedPreferences.Editor prefsEditor = sharedPreferences.edit();
-            json = new Gson().toJson(usuarioList);
-            prefsEditor.putString("usuarioList", json);
+            json = new Gson().toJson(userList);
+            prefsEditor.putString("userList", json);
             prefsEditor.commit();
-            viewHolder.empleadosListAdapter.submitList(usuarioList);
+            viewHolder.empleadosListAdapter.submitList(userList);
             viewHolder.empleadosListAdapter.notifyItemChanged(position);
             this.dismiss();
         });
