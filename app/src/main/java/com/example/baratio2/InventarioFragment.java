@@ -3,7 +3,6 @@ package com.example.baratio2;
 import static android.content.Context.MODE_PRIVATE;
 
 import android.content.SharedPreferences;
-import android.media.Image;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -20,7 +19,6 @@ import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
 import java.util.ArrayList;
-import java.util.Locale;
 
 public class InventarioFragment extends Fragment {
 
@@ -83,7 +81,7 @@ public class InventarioFragment extends Fragment {
     }
 
     public void init() {
-        lstProductos = root.findViewById(R.id.lstProductos);
+        lstProductos = root.findViewById(R.id.lstUsuarios);
         txtBuscar = root.findViewById(R.id.txtBuscar);
         txtPrecio = root.findViewById(R.id.txtPrecio);
         lstProductos.setLayoutManager(new LinearLayoutManager(root.getContext()));

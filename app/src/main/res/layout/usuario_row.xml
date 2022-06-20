@@ -48,7 +48,6 @@
                 android:id="@+id/txtPrecio"
                 android:layout_width="47dp"
                 android:layout_height="wrap_content"
-                android:text="669"
                 android:textSize="16sp" />
 
             <ImageButton

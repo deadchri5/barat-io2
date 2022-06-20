@@ -14,7 +14,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
         <TextView
             android:id="@+id/txtTitulo"
@@ -33,7 +33,7 @@
             android:id="@+id/btnCrear"
             android:layout_width="66dp"
             android:layout_height="59dp"
-            android:layout_marginTop="42dp"
+            android:layout_marginTop="8dp"
             android:layout_marginEnd="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
@@ -43,15 +43,15 @@
 
         <EditText
             android:id="@+id/txtBuscar"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtTitulo"
             android:layout_width="300dp"
             android:layout_height="42dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
             android:ems="10"
             android:hint="@string/buscar"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtTitulo" />
 
         <ImageButton
             android:id="@+id/btnBuscar"
@@ -65,48 +65,15 @@
             app:layout_constraintTop_toBottomOf="@+id/btnCrear"
             app:srcCompat="@drawable/search" />
 
-        <Spinner
-            android:id="@+id/spMarca"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtBuscar"
-            android:layout_width="146dp"
-            android:layout_height="30dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
-            android:entries="@array/marca" />
-
-        <EditText
-            android:id="@+id/txtPrecio"
-            app:layout_constraintStart_toEndOf="@+id/spMarca"
-            app:layout_constraintTop_toBottomOf="@+id/txtBuscar"
-            android:layout_width="146dp"
-            android:layout_height="40dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:ems="10"
-            android:hint="Precio"
-            android:inputType="textPersonName" />
-
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/lstProductos"
-            android:layout_width="370dp"
-            android:layout_height="745dp"
-            android:layout_marginTop="8dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtPrecio"
-            tools:listitem="@layout/usuario_row" />
-
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/floatingActionButton2"
+            android:id="@+id/lstUsuarios"
+            android:layout_width="354dp"
+            android:layout_height="478dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:srcCompat="@drawable/ic_baseline_add_24"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="16dp"
-            android:clickable="true" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtBuscar"
+            tools:listitem="@layout/usuario_row" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

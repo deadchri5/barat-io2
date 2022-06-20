@@ -33,8 +33,14 @@
     <string name="agregar">Agregar</string>
     <string name="volver">Volver</string>
     <string name="modificar">Modificar</string>
+    <string name="agregar_usuario">Crear usuario</string>
+    <string name="correo">Correo</string>
     <string-array name="marca">
         <item>Marca</item>
         <item>Usuario</item>
+    </string-array>
+    <string-array name="nivel">
+        <item>Usuario</item>
+        <item>Administrador</item>
     </string-array>
 </resources>

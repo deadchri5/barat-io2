@@ -1,54 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CrearUsuarioDialogFragment">
+    tools:context=".CrearProductoDialogFragment"
+    android:orientation="vertical"
+    android:gravity="center">
 
-    <!-- TODO: Update blank fragment layout -->
-    <AbsoluteLayout
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        tools:ignore="Deprecated">
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/agregar_usuario"
+        android:textColor="@color/teal_200"
+        android:textSize="30sp" />
 
-        <EditText
-            android:id="@+id/editTextTextPersonName4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_x="89dp"
-            android:layout_y="176dp"
-            android:ems="10"
-            android:hint="Nombre de Usuario"
-            android:inputType="textPersonName" />
+    <TextView
+        android:id="@+id/txtTituloNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/nombre"
+        android:textSize="20sp" />
 
-        <EditText
-            android:id="@+id/editTextTextPassword6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_x="89dp"
-            android:layout_y="262dp"
-            android:ems="10"
-            android:hint="Contraseña"
-            android:inputType="textPassword" />
+    <EditText
+        android:id="@+id/txtNombre"
+        android:layout_width="265dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="text"
+        tools:ignore="SpeakableTextPresentCheck" />
 
-        <EditText
-            android:id="@+id/editTextTextPassword7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_x="86dp"
-            android:layout_y="346dp"
-            android:ems="10"
-            android:hint="Confrime Contraseña"
-            android:inputType="textPassword" />
+    <TextView
+        android:id="@+id/txtTituloCorreo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/correo"
+        android:textSize="20sp" />
 
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_x="129dp"
-            android:layout_y="445dp"
-            android:text="Registrar" />
+    <EditText
+        android:id="@+id/txtCorreo"
+        android:layout_width="265dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="text" />
 
-    </AbsoluteLayout>
+    <TextView
+        android:id="@+id/txtPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/pass"
+        android:textSize="20sp" />
 
-</FrameLayout>
+    <EditText
+        android:id="@+id/txtContrasena"
+        android:layout_width="265dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="text" />
+
+    <Spinner
+        android:id="@+id/spinnerUsuario"
+        android:layout_width="230dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:entries="@array/nivel" />
+
+    <Button
+        android:id="@+id/btnRegistrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="Registrar"
+        android:text="@string/agregar" />
+
+    <Button
+        android:id="@+id/btnVolver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="Actualizar"
+        android:text="@string/volver" />
+
+</LinearLayout>
