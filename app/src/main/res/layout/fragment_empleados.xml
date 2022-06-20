@@ -16,64 +16,74 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/txtTitulo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="395dp"
+            android:layout_height="147dp"
             android:layout_marginTop="16dp"
-            android:text="@string/empleado"
-            android:textAlignment="center"
-            android:textColor="#009688"
-            android:textSize="34sp"
+            android:background="#FFFFFF"
+            app:layout_constraintBottom_toTopOf="@+id/lstUsuarios"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <ImageButton
-            android:id="@+id/btnCrear"
-            android:layout_width="66dp"
-            android:layout_height="59dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="16dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/txtTitulo"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/add" />
+            app:layout_constraintVertical_bias="0.237">
 
-        <EditText
-            android:id="@+id/txtBuscar"
-            android:layout_width="300dp"
-            android:layout_height="42dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
-            android:ems="10"
-            android:hint="@string/buscar"
-            android:inputType="textPersonName"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtTitulo" />
+            <ImageButton
+                android:id="@+id/btnBuscar"
+                android:layout_width="66dp"
+                android:layout_height="59dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="17dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnCrear"
+                app:srcCompat="@drawable/search" />
 
-        <ImageButton
-            android:id="@+id/btnBuscar"
-            android:layout_width="66dp"
-            android:layout_height="59dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="16dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/txtBuscar"
-            app:layout_constraintTop_toBottomOf="@+id/btnCrear"
-            app:srcCompat="@drawable/search" />
+            <TextView
+                android:id="@+id/txtTitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="84dp"
+                android:text="@string/empleado"
+                android:textAlignment="center"
+                android:textColor="#009688"
+                android:textSize="34sp"
+                app:layout_constraintEnd_toStartOf="@+id/btnCrear"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <EditText
+                android:id="@+id/txtBuscar"
+                android:layout_width="300dp"
+                android:layout_height="42dp"
+                android:ems="10"
+                android:hint="@string/buscar"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btnBuscar"
+                app:layout_constraintTop_toBottomOf="@+id/txtTitulo" />
+
+            <ImageButton
+                android:id="@+id/btnCrear"
+                android:layout_width="66dp"
+                android:layout_height="59dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="7dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/add" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/lstUsuarios"
-            android:layout_width="354dp"
-            android:layout_height="478dp"
-            android:layout_marginTop="44dp"
+            android:layout_width="372dp"
+            android:layout_height="392dp"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.491"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtBuscar"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
             tools:listitem="@layout/usuario_row" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

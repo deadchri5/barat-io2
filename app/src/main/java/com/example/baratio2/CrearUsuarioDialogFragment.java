@@ -72,8 +72,9 @@ public class CrearUsuarioDialogFragment extends DialogFragment {
         System.out.println(nombre);
         String json = sharedPreferences.getString("userList", "");
         ArrayList<Usuario> userList = new Gson()
-                .fromJson(json, new TypeToken<ArrayList<Producto>>() { }.getType());
+                .fromJson(json, new TypeToken<ArrayList<Usuario>>() { }.getType());
         userList.add(new Usuario(id, nombre, tipoUsuraio, correo, contraseña));
+        System.out.println(id);
         SharedPreferences.Editor prefsEditor = sharedPreferences.edit();
         json = new Gson().toJson(userList);
         System.out.println(json);
