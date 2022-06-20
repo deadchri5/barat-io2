@@ -7,12 +7,15 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.SpinnerAdapter;
 import android.widget.TextView;
 
 import androidx.fragment.app.DialogFragment;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
@@ -58,7 +61,7 @@ public class ModificarProductoDialogFragment extends DialogFragment {
         precio.setText(producto.getPrecio());
         descripcion = root.findViewById(R.id.txtDescripcion);
         descripcion.setText(producto.getDescripcion());
-        marca = root.findViewById(R.id.spinnerUsuario);
+        marca = root.findViewById(R.id.spinnerMarca);
         agregar = root.findViewById(R.id.btnRegistrar);
         agregar.setText(R.string.modificar);
         agregar.setOnClickListener(view -> {

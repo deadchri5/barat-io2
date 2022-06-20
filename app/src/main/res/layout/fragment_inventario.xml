@@ -66,13 +66,15 @@
                 app:layout_constraintTop_toBottomOf="@+id/btnCrear"
                 app:srcCompat="@drawable/search" />
 
-            <Spinner
-                android:id="@+id/spMarca"
+            <EditText
+                android:id="@+id/txtMarca"
                 android:layout_width="146dp"
-                android:layout_height="30dp"
+                android:layout_height="40dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
-                android:entries="@array/marca"
+                android:ems="10"
+                android:hint="@string/marca"
+                android:inputType="textPersonName"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/txtBuscar" />
 
@@ -83,9 +85,9 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:ems="10"
-                android:hint="Precio"
+                android:hint="@string/precio"
                 android:inputType="textPersonName"
-                app:layout_constraintStart_toEndOf="@+id/spMarca"
+                app:layout_constraintStart_toEndOf="@+id/txtMarca"
                 app:layout_constraintTop_toBottomOf="@+id/txtBuscar" />
 
             <androidx.recyclerview.widget.RecyclerView

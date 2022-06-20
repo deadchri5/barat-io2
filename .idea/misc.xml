@@ -13,13 +13,9 @@
         <entry key="..\:/Users/Christian/AndroidStudioProjects/baratio2/app/src/main/res/layout/activity_login.xml" value="0.2234375" />
         <entry key="..\:/Users/Christian/AndroidStudioProjects/baratio2/app/src/main/res/layout/activity_main.xml" value="0.2234375" />
         <entry key="..\:/Users/Christian/AndroidStudioProjects/baratio2/app/src/main/res/layout/content_main.xml" value="0.2234375" />
-        <entry key="..\:/Users/Christian/AndroidStudioProjects/baratio2/app/src/main/res/layout/fragment_crear_producto.xml" value="0.2234375" />
-        <entry key="..\:/Users/Christian/AndroidStudioProjects/baratio2/app/src/main/res/layout/fragment_crear_usuario.xml" value="0.2234375" />
-        <entry key="..\:/Users/Christian/AndroidStudioProjects/baratio2/app/src/main/res/layout/fragment_empleados.xml" value="0.2234375" />
         <entry key="..\:/Users/Christian/AndroidStudioProjects/baratio2/app/src/main/res/layout/fragment_inventario.xml" value="0.2234375" />
         <entry key="..\:/Users/Christian/AndroidStudioProjects/baratio2/app/src/main/res/layout/inventario_row.xml" value="0.2234375" />
         <entry key="..\:/Users/Christian/AndroidStudioProjects/baratio2/app/src/main/res/layout/nav_header_main.xml" value="0.2234375" />
-        <entry key="..\:/Users/Christian/AndroidStudioProjects/baratio2/app/src/main/res/layout/usuario_row.xml" value="0.2234375" />
         <entry key="..\:/Users/Christian/AndroidStudioProjects/baratio2/app/src/main/res/menu/activity_main_drawer.xml" value="0.2234375" />
         <entry key="..\:/Users/Christian/AndroidStudioProjects/baratio2/app/src/main/res/menu/main.xml" value="0.2234375" />
         <entry key="..\:/Users/Christian/AndroidStudioProjects/baratio2/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
@@ -43,8 +39,13 @@
         <entry key="..\:/Users/feivi/AndroidStudioProjects/barat-io2/app/src/main/res/menu/activity_main_drawer.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/feivi/AndroidStudioProjects/barat-io2/app/src/main/res/menu/main.xml" value="0.20416666666666666" />
         <entry key="..\:/xampp/htdocs/barat-io2/app/src/main/res/drawable-v24/baseline_logout_24.xml" value="0.167" />
+        <entry key="..\:/xampp/htdocs/barat-io2/app/src/main/res/layout/fragment_crear_producto.xml" value="0.2" />
+        <entry key="..\:/xampp/htdocs/barat-io2/app/src/main/res/layout/fragment_empleados.xml" value="0.2" />
+        <entry key="..\:/xampp/htdocs/barat-io2/app/src/main/res/layout/fragment_inventario.xml" value="0.2" />
         <entry key="..\:/xampp/htdocs/barat-io2/app/src/main/res/layout/fragment_logout.xml" value="0.20416666666666666" />
+        <entry key="..\:/xampp/htdocs/barat-io2/app/src/main/res/layout/inventario_row.xml" value="0.33" />
         <entry key="..\:/xampp/htdocs/barat-io2/app/src/main/res/layout/nav_header_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/xampp/htdocs/barat-io2/app/src/main/res/layout/usuario_row.xml" value="0.18" />
         <entry key="..\:/xampp/htdocs/barat-io2/app/src/main/res/menu/activity_main_drawer.xml" value="0.20416666666666666" />
       </map>
     </option>

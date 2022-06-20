@@ -54,7 +54,7 @@
                 android:id="@+id/btnCantidad"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/ic_baseline_unfold_more_24" />
+                app:srcCompat="@drawable/edit" />
 
             <ImageButton
                 android:id="@+id/btnEliminar"

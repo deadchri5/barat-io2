@@ -25,7 +25,7 @@ public class InventarioFragment extends Fragment {
     private InventarioListAdapter inventarioListAdapter;
     private RecyclerView lstProductos;
     private SharedPreferences sharedPreferences;
-    private EditText txtBuscar, txtPrecio;
+    private EditText txtBuscar, txtPrecio, txtMarca;
     ArrayList<Producto> productoList;
     View root;
 
@@ -84,6 +84,7 @@ public class InventarioFragment extends Fragment {
         lstProductos = root.findViewById(R.id.lstUsuarios);
         txtBuscar = root.findViewById(R.id.txtBuscar);
         txtPrecio = root.findViewById(R.id.txtPrecio);
+        txtMarca = root.findViewById(R.id.txtMarca);
         lstProductos.setLayoutManager(new LinearLayoutManager(root.getContext()));
         cargarDatos();
         ImageButton btnCrear = root.findViewById(R.id.btnCrear);
@@ -98,14 +99,21 @@ public class InventarioFragment extends Fragment {
         btnBuscar.setOnClickListener(view -> {
             String sBuscar = txtBuscar.getText().toString();
             String sPrecio = txtPrecio.getText().toString();
-            if (sBuscar.isEmpty() && sPrecio.isEmpty()) {
+            String sMarca = txtMarca.getText().toString();
+            if (sBuscar.isEmpty() && sPrecio.isEmpty() && sMarca.isEmpty()) {
                 inventarioListAdapter.submitList(productoList);
                 inventarioListAdapter.notifyDataSetChanged();
             } else {
                 ArrayList<Producto> filteredProductoList = new ArrayList<>();
 
                 for (Producto p : productoList) {
-                    boolean bNombre = true, bPrecio = true;
+                    boolean bNombre = true, bPrecio = true, bMarca = true;
+                    if (!sMarca.isEmpty()) {
+                        bMarca = false;
+                        if (p.getMarca().toLowerCase().contains(sMarca.toLowerCase())) {
+                            bMarca = true;
+                        }
+                    }
                     if (!sBuscar.isEmpty()) {
                         bNombre = false;
                         if (p.getNombre().toLowerCase().contains(sBuscar.toLowerCase())) {
@@ -120,7 +128,7 @@ public class InventarioFragment extends Fragment {
                             bPrecio = true;
                         }
                     }
-                    if (bNombre && bPrecio) {
+                    if (bNombre && bPrecio && bMarca) {
                         filteredProductoList.add(p);
                     }
                 }
