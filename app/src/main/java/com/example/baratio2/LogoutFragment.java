@@ -25,11 +25,10 @@ public class LogoutFragment extends Fragment {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
-        Intent intent = new Intent(LogoutFragment.this.getActivity(), LoginActivity.class);
-        startActivity(intent);
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
         }
+        this.getActivity().finish();
     }
 
     @Override

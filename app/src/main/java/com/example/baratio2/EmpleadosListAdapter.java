@@ -42,7 +42,7 @@ public class EmpleadosListAdapter extends ListAdapter<Usuario, EmpleadosListAdap
             context = binding.getRoot().getContext();
             usuarioRowBinding = binding;
             btnDelete = binding.getRoot().findViewById(R.id.btnEliminar);
-            btnModificar = binding.getRoot().findViewById(R.id.btnModificar);
+            btnModificar = binding.getRoot().findViewById(R.id.btnModificarUsuario);
             this.empleadosListAdapter = empleadosListAdapter;
 
         }
@@ -50,6 +50,13 @@ public class EmpleadosListAdapter extends ListAdapter<Usuario, EmpleadosListAdap
         public void setOnClickListeners(Usuario usuario) {
             usuarioRowBinding.setUsuario(usuario);
             btnDelete.setOnClickListener(this);
+            btnModificar.setOnClickListener(view -> {
+                final ModificarUsuarioDialogFragment modificarDialog =
+                        new ModificarUsuarioDialogFragment(this, usuario);
+                modificarDialog.setCancelable(true);
+                AppCompatActivity activity = (AppCompatActivity) view.getContext();
+                modificarDialog.show(activity.getSupportFragmentManager(), "dialog");
+            });
         }
 
         @Override

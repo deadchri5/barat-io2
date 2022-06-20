@@ -24,8 +24,7 @@ import java.util.ArrayList;
 
 public class CrearProductoDialogFragment extends DialogFragment {
     View root;
-    EditText nombre, cantidad, precio, descripcion;
-    Spinner marca;
+    EditText nombre, cantidad, precio, descripcion,marca;
     Button agregar;
     InventarioFragment inventarioFragment;
 
@@ -52,7 +51,7 @@ public class CrearProductoDialogFragment extends DialogFragment {
         cantidad = root.findViewById(R.id.txtCantidad);
         precio = root.findViewById(R.id.txtPrecio);
         descripcion = root.findViewById(R.id.txtDescripcion);
-        marca = root.findViewById(R.id.spinnerMarca);
+        marca = root.findViewById(R.id.txtMarca);
         agregar = root.findViewById(R.id.btnRegistrar);
         agregar.setOnClickListener(view -> {
             SharedPreferences sharedPreferences =
@@ -64,7 +63,7 @@ public class CrearProductoDialogFragment extends DialogFragment {
             String sCantidad = cantidad.getText().toString();
             String sPrecio = precio.getText().toString();
             String sDescripcion = descripcion.getText().toString();
-            String sMarca = marca.getSelectedItem().toString();
+            String sMarca = marca.getText().toString();
             productoList.add(new Producto(sNombre+sPrecio, sNombre, sCantidad,
                     sMarca, sDescripcion, sPrecio));
             SharedPreferences.Editor prefsEditor = sharedPreferences.edit();

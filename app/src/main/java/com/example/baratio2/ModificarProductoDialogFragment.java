@@ -24,8 +24,7 @@ import java.util.ArrayList;
 
 public class ModificarProductoDialogFragment extends DialogFragment {
     View root;
-    EditText nombre, cantidad, precio, descripcion;
-    Spinner marca;
+    EditText nombre, cantidad, precio, descripcion, marca;
     Button agregar;
     InventarioListAdapter.InventarioViewHolder viewHolder;
     Producto producto;
@@ -61,7 +60,8 @@ public class ModificarProductoDialogFragment extends DialogFragment {
         precio.setText(producto.getPrecio());
         descripcion = root.findViewById(R.id.txtDescripcion);
         descripcion.setText(producto.getDescripcion());
-        marca = root.findViewById(R.id.spinnerMarca);
+        marca = root.findViewById(R.id.txtMarca);
+        marca.setText(producto.getMarca());
         agregar = root.findViewById(R.id.btnRegistrar);
         agregar.setText(R.string.modificar);
         agregar.setOnClickListener(view -> {
@@ -74,11 +74,10 @@ public class ModificarProductoDialogFragment extends DialogFragment {
             String sCantidad = cantidad.getText().toString();
             String sPrecio = precio.getText().toString();
             String sDescripcion = descripcion.getText().toString();
-            //Corregir cuando esten las marcas
-            //String sMarca = marca.getSelectedItem().toString();
+            String sMarca = marca.getText().toString();
             int position = viewHolder.getAdapterPosition();
             productoList.set(position, new Producto(sNombre+sPrecio, sNombre, sCantidad,
-                    producto.getMarca(), sDescripcion, sPrecio));
+                    sMarca, sDescripcion, sPrecio));
             SharedPreferences.Editor prefsEditor = sharedPreferences.edit();
             json = new Gson().toJson(productoList);
             prefsEditor.putString("productoList", json);

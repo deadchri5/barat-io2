@@ -30,6 +30,7 @@
     <string name="logout">Cerrar Sesión</string>
     <string name="crear_producto">Crear Producto</string>
     <string name="modificar_producto">Modificar Producto</string>
+    <string name="modificar_usuario">Modificar Usuario</string>
     <string name="agregar">Agregar</string>
     <string name="volver">Volver</string>
     <string name="modificar">Modificar</string>

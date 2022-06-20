@@ -93,12 +93,4 @@
         android:onClick="Registrar"
         android:text="@string/agregar" />
 
-    <Button
-        android:id="@+id/btnVolver"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:onClick="Actualizar"
-        android:text="@string/volver" />
-
 </LinearLayout>

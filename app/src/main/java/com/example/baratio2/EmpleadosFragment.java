@@ -25,7 +25,7 @@ public class EmpleadosFragment extends Fragment {
     private EmpleadosListAdapter empleadosListAdapter;
     private RecyclerView lstUsuarios;
     private SharedPreferences sharedPreferences;
-    private EditText txtBuscar, txtPrecio;
+    private EditText txtBuscar;
     ArrayList<Usuario> usuarioList;
     View root;
 
@@ -60,7 +60,6 @@ public class EmpleadosFragment extends Fragment {
     public void init() {
         lstUsuarios = root.findViewById(R.id.lstUsuarios);
         txtBuscar = root.findViewById(R.id.txtBuscar);
-        txtPrecio = root.findViewById(R.id.txtPrecio);
         lstUsuarios.setLayoutManager(new LinearLayoutManager(root.getContext()));
         cargarDatos();
         ImageButton btnCrear = root.findViewById(R.id.btnCrear);
@@ -74,33 +73,20 @@ public class EmpleadosFragment extends Fragment {
         ImageButton btnBuscar = root.findViewById(R.id.btnBuscar);
         btnBuscar.setOnClickListener(view -> {
             String sBuscar = txtBuscar.getText().toString();
-            String sPrecio = txtPrecio.getText().toString();
-            if (sBuscar.isEmpty() && sPrecio.isEmpty()) {
+            if (sBuscar.isEmpty()) {
                 empleadosListAdapter.submitList(usuarioList);
                 empleadosListAdapter.notifyDataSetChanged();
             } else {
                 ArrayList<Usuario> filteredUserList = new ArrayList<>();
-
                 for (Usuario p : usuarioList) {
-                    boolean bNombre = true, bPrecio = true;
-                    if (!sBuscar.isEmpty()) {
-                        bNombre = false;
-                        if (p.getNombre().toLowerCase().contains(sBuscar.toLowerCase())) {
-                            bNombre = true;
-                        }
+                    boolean bNombre = false;
+                    if (p.getNombre().toLowerCase().contains(sBuscar.toLowerCase())) {
+                        bNombre = true;
                     }
-                    /*
-                    if (!sPrecio.isEmpty()) {
-                        float precioP = Float.parseFloat(p.getPrecio());
-                        float precioS = Float.parseFloat(sPrecio);
-                        bPrecio = false;
-                        if (precioP >= precioS) {
-                            bPrecio = true;
-                        }
+                    if (p.getCorreo().toLowerCase().contains(sBuscar.toLowerCase())) {
+                        bNombre = true;
                     }
-                    if (bNombre && bPrecio) {
-                        filteredUserList.add(p);
-                    }*/
+                    if(bNombre) filteredUserList.add(p);
                 }
                 empleadosListAdapter.submitList(filteredUserList);
                 empleadosListAdapter.notifyDataSetChanged();

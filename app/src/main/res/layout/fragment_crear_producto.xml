@@ -86,14 +86,15 @@
         android:text="@string/marca"
         android:textSize="20sp" />
 
-    <Spinner
-        android:id="@+id/spinnerMarca"
-        android:layout_width="230dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="16dp"
+    <EditText
+        android:id="@+id/txtMarca"
+        android:layout_width="265dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        android:entries="@array/marca" />
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="text"  />
 
     <TextView
         android:id="@+id/txtTituloDescripcion"
@@ -122,13 +123,5 @@
         android:layout_marginTop="8dp"
         android:onClick="Registrar"
         android:text="@string/agregar" />
-
-    <Button
-        android:id="@+id/btnVolver"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:onClick="Actualizar"
-        android:text="@string/volver" />
 
 </LinearLayout>
